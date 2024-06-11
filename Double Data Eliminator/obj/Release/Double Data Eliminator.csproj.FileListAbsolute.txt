@@ -151,6 +151,12 @@ C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Elim
 C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Xml.XmlSerializer.dll
 C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Xml.XPath.dll
 C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Xml.XPath.XDocument.dll
-C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\Octokit.dll
-C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\Octokit.xml
 C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.exe.config
+C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Text.Encodings.Web.dll
+C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Text.Json.dll
+C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Text.Encodings.Web.xml
+C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Text.Json.xml
+C:\Users\ehofm\Desktop\Backup 10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Threading.Tasks.Extensions.xml

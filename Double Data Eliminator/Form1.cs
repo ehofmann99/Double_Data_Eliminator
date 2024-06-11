@@ -264,71 +264,40 @@ namespace Double_Data_Eliminator
         private static async void CreateIssue(string message)
 
         {
-            var owner = "OWNER";
-
-            var repo = "REPO";
-
-            var token = "YOUR-TOKEN";
-
-
-
+            var owner = "ehofmann99";
+            var repo = "Double_Data_Eliminator";
+            var token = "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";
+            
             var issue = new
-
             {
-
                 title = "Found a bug",
-
                 body = "I'm having a problem with this.",
-
-                assignees = new[] { "octocat" },
-
-                milestone = 1,
-
+                assignees = new[] { "ehofmann99" },
                 labels = new[] { "bug" }
-
             };
 
-
-
             var json = System.Text.Json.JsonSerializer.Serialize(issue);
-
             var data = new StringContent(json, Encoding.UTF8, "application/json");
 
-
-
             using (var client = new HttpClient())
-
             {
-
                 client.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
-
                 client.DefaultRequestHeaders.Add("X-GitHub-Api-Version", "2022-11-28");
+                client.DefaultRequestHeaders.Add("Accept", "application/vnd.github+json");
+                client.DefaultRequestHeaders.Add("user-agent", "ehofmann99");
 
-                client.DefaultRequestHeaders.Add("User-Agent", "CSharpApp");
-
-
-                var url = $https://api.github.com/repos/{owner}/{repo}/issues;
-
+                var url = $"https://api.github.com/repos/{owner}/{repo}/issues";
                 var response = await client.PostAsync(url, data);
 
-
-
                 if (response.IsSuccessStatusCode)
-
                 {
-
                     var result = await response.Content.ReadAsStringAsync();
-
                     Console.WriteLine($"Issue created: {result}");
-
                 }
-
                 else
-
                 {
-
                     Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
-
+                    Console.WriteLine(response.Content.ReadAsStringAsync().Result);
                 }
 
             }
