@@ -1,0 +1,6 @@
+C:\Users\ehofm\Downloads\ChromeSetup.exe
+C:\Users\ehofm\Downloads\desktop.ini
+C:\Users\ehofm\Downloads\LibreOffice_24.2.4_Win_x86-64.msi
+C:\Users\ehofm\Downloads\TeamViewerMeeting_Setup_x64.exe
+C:\Users\ehofm\Downloads\VisualStudioSetup.exe
+C:\Users\ehofm\Downloads\vs_Community.exe

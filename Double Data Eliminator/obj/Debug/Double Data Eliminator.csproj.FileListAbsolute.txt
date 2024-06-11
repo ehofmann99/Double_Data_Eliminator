@@ -1,0 +1,49 @@
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.exe.config
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.exe
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.pdb
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.AssemblyReference.cache
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double_Data_Eliminator.Form1.resources
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double_Data_Eliminator.Properties.Resources.resources
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.GenerateResource.cache
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.CoreCompileInputs.cache
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.exe
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.pdb
+C:\Users\walde\Desktop\Double Data Eliminator Backups\Backup 30.01.2024\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.exe.config
+C:\Users\walde\Desktop\Double Data Eliminator Backups\Backup 30.01.2024\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.exe
+C:\Users\walde\Desktop\Double Data Eliminator Backups\Backup 30.01.2024\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.pdb
+C:\Users\walde\Desktop\Double Data Eliminator Backups\Backup 30.01.2024\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.AssemblyReference.cache
+C:\Users\walde\Desktop\Double Data Eliminator Backups\Backup 30.01.2024\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double_Data_Eliminator.Form1.resources
+C:\Users\walde\Desktop\Double Data Eliminator Backups\Backup 30.01.2024\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double_Data_Eliminator.Properties.Resources.resources
+C:\Users\walde\Desktop\Double Data Eliminator Backups\Backup 30.01.2024\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.GenerateResource.cache
+C:\Users\walde\Desktop\Double Data Eliminator Backups\Backup 30.01.2024\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.CoreCompileInputs.cache
+C:\Users\walde\Desktop\Double Data Eliminator Backups\Backup 30.01.2024\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.exe
+C:\Users\walde\Desktop\Double Data Eliminator Backups\Backup 30.01.2024\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.pdb
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.exe.config
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.exe
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.pdb
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.AssemblyReference.cache
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double_Data_Eliminator.Form1.resources
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double_Data_Eliminator.Properties.Resources.resources
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.GenerateResource.cache
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.CoreCompileInputs.cache
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.exe
+C:\Users\walde\Desktop\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.pdb
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.AssemblyReference.cache
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double_Data_Eliminator.Form1.resources
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double_Data_Eliminator.Properties.Resources.resources
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.GenerateResource.cache
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.CoreCompileInputs.cache
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.exe
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.pdb
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.exe.config
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.exe
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\Double Data Eliminator.pdb
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\System.Buffers.dll
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\System.Memory.dll
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\System.Buffers.xml
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\System.Memory.xml
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Debug\Double Data Eliminator.csproj.CopyComplete

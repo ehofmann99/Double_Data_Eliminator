@@ -1,0 +1,38 @@
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\Double Data Eliminator.exe.config
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\Double Data Eliminator.exe
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\Double Data Eliminator.pdb
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Buffers.dll
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Memory.dll
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Numerics.Vectors.dll
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Buffers.xml
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Memory.xml
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Numerics.Vectors.xml
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.csproj.AssemblyReference.cache
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double_Data_Eliminator.Form1.resources
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double_Data_Eliminator.Properties.Resources.resources
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.csproj.GenerateResource.cache
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.csproj.CoreCompileInputs.cache
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.csproj.CopyComplete
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.exe
+C:\Users\ehofm\Desktop\Backup 31.03.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.pdb
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\Double Data Eliminator.exe.config
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\Double Data Eliminator.exe
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\Double Data Eliminator.pdb
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Buffers.dll
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Memory.dll
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Numerics.Vectors.dll
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Buffers.xml
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Memory.xml
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Numerics.Vectors.xml
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.csproj.AssemblyReference.cache
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double_Data_Eliminator.Form1.resources
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double_Data_Eliminator.Properties.Resources.resources
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.csproj.GenerateResource.cache
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.csproj.CoreCompileInputs.cache
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.csproj.CopyComplete
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.exe
+C:\Users\ehofm\Desktop\Backup10.06.2024\Double Data Eliminator\Double Data Eliminator\Double Data Eliminator\obj\Release\Double Data Eliminator.pdb
