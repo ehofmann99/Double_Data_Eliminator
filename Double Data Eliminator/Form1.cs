@@ -261,6 +261,7 @@ namespace Double_Data_Eliminator
             CreateIssue(message);
         }
 
+        //Rest API von Github nutzen, um ein neues Issue zu erzeugen
         private static async void CreateIssue(string message)
 
         {
