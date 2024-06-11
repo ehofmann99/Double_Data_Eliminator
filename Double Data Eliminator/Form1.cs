@@ -9,6 +9,7 @@ using Double_Data_Eliminator.Functions.Files_with_same_content;
 
 namespace Double_Data_Eliminator
 {
+    //Testkommentar
     public partial class Form1 : Form
     {
         public delegate void Test999deligate();
