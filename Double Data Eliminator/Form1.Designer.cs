@@ -43,6 +43,8 @@ namespace Double_Data_Eliminator
             this.RBttn_Find_Same_Content = new System.Windows.Forms.RadioButton();
             this.Settings = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Button_Commit_Error = new System.Windows.Forms.Button();
+            this.TextBox_ErrorMessage = new System.Windows.Forms.TextBox();
             this.Settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +63,7 @@ namespace Double_Data_Eliminator
             // TextBox_Input_Path
             // 
             this.TextBox_Input_Path.Location = new System.Drawing.Point(22, 223);
-            this.TextBox_Input_Path.Margin = new System.Windows.Forms.Padding(2);
+            this.TextBox_Input_Path.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TextBox_Input_Path.Name = "TextBox_Input_Path";
             this.TextBox_Input_Path.Size = new System.Drawing.Size(338, 20);
             this.TextBox_Input_Path.TabIndex = 1;
@@ -72,7 +74,7 @@ namespace Double_Data_Eliminator
             this.Button_Confirm_Path.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Button_Confirm_Path.ForeColor = System.Drawing.Color.Black;
             this.Button_Confirm_Path.Location = new System.Drawing.Point(373, 223);
-            this.Button_Confirm_Path.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_Confirm_Path.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Button_Confirm_Path.Name = "Button_Confirm_Path";
             this.Button_Confirm_Path.Size = new System.Drawing.Size(85, 45);
             this.Button_Confirm_Path.TabIndex = 2;
@@ -94,7 +96,7 @@ namespace Double_Data_Eliminator
             // 
             this.Confirm_deletion_button.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Confirm_deletion_button.Location = new System.Drawing.Point(373, 458);
-            this.Confirm_deletion_button.Margin = new System.Windows.Forms.Padding(2);
+            this.Confirm_deletion_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Confirm_deletion_button.Name = "Confirm_deletion_button";
             this.Confirm_deletion_button.Size = new System.Drawing.Size(85, 45);
             this.Confirm_deletion_button.TabIndex = 5;
@@ -107,9 +109,9 @@ namespace Double_Data_Eliminator
             this.CheckedListBox_Paths_To_Delete.FormattingEnabled = true;
             this.CheckedListBox_Paths_To_Delete.HorizontalScrollbar = true;
             this.CheckedListBox_Paths_To_Delete.Location = new System.Drawing.Point(22, 318);
-            this.CheckedListBox_Paths_To_Delete.Margin = new System.Windows.Forms.Padding(2);
+            this.CheckedListBox_Paths_To_Delete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckedListBox_Paths_To_Delete.Name = "CheckedListBox_Paths_To_Delete";
-            this.CheckedListBox_Paths_To_Delete.Size = new System.Drawing.Size(436, 124);
+            this.CheckedListBox_Paths_To_Delete.Size = new System.Drawing.Size(436, 109);
             this.CheckedListBox_Paths_To_Delete.TabIndex = 3;
             // 
             // ProgressBar
@@ -117,7 +119,7 @@ namespace Double_Data_Eliminator
             this.ProgressBar.BackColor = System.Drawing.Color.White;
             this.ProgressBar.ForeColor = System.Drawing.SystemColors.Control;
             this.ProgressBar.Location = new System.Drawing.Point(22, 260);
-            this.ProgressBar.Margin = new System.Windows.Forms.Padding(2);
+            this.ProgressBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProgressBar.Name = "ProgressBar";
             this.ProgressBar.Size = new System.Drawing.Size(336, 12);
             this.ProgressBar.TabIndex = 6;
@@ -187,12 +189,33 @@ namespace Double_Data_Eliminator
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // Button_Commit_Error
+            // 
+            this.Button_Commit_Error.Location = new System.Drawing.Point(22, 458);
+            this.Button_Commit_Error.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Button_Commit_Error.Name = "Button_Commit_Error";
+            this.Button_Commit_Error.Size = new System.Drawing.Size(59, 36);
+            this.Button_Commit_Error.TabIndex = 13;
+            this.Button_Commit_Error.Text = "button1";
+            this.Button_Commit_Error.UseVisualStyleBackColor = true;
+            this.Button_Commit_Error.Click += new System.EventHandler(this.Button_Commit_Error_Click);
+            // 
+            // TextBox_ErrorMessage
+            // 
+            this.TextBox_ErrorMessage.Location = new System.Drawing.Point(100, 458);
+            this.TextBox_ErrorMessage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextBox_ErrorMessage.Name = "TextBox_ErrorMessage";
+            this.TextBox_ErrorMessage.Size = new System.Drawing.Size(245, 20);
+            this.TextBox_ErrorMessage.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(482, 523);
+            this.ClientSize = new System.Drawing.Size(482, 513);
+            this.Controls.Add(this.TextBox_ErrorMessage);
+            this.Controls.Add(this.Button_Commit_Error);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Settings);
             this.Controls.Add(this.label3);
@@ -204,7 +227,7 @@ namespace Double_Data_Eliminator
             this.Controls.Add(this.TextBox_Input_Path);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Double Data Eliminator";
@@ -231,6 +254,8 @@ namespace Double_Data_Eliminator
         private System.Windows.Forms.RadioButton RBttn_Find_Same_Content;
         private System.Windows.Forms.GroupBox Settings;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Button_Commit_Error;
+        private System.Windows.Forms.TextBox TextBox_ErrorMessage;
     }
 }
 

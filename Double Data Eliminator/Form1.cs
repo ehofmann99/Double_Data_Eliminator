@@ -6,6 +6,9 @@ using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 using Double_Data_Eliminator.Functions.Files_with_same_content;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Double_Data_Eliminator
 {
@@ -53,7 +56,7 @@ namespace Double_Data_Eliminator
             //read all existing files in folders and subfolders
             Directory_scanner_files_Functions.Directory_scanner_files(path_list);
 
-            DirectoryInfo directory_executable = new DirectoryInfo((Application.ExecutablePath));
+            DirectoryInfo directory_executable = new DirectoryInfo((System.Windows.Forms.Application.ExecutablePath));
 
             ProgressBar.Value = 0;
 
@@ -77,7 +80,7 @@ namespace Double_Data_Eliminator
 
             CheckedListBox_Paths_To_Delete.Items.Clear();
 
-            ProgressBar myprogressbar = (ProgressBar)Application.OpenForms["Form1"].Controls.Find("Progressbar", false).FirstOrDefault();
+            ProgressBar myprogressbar = (ProgressBar)System.Windows.Forms.Application.OpenForms["Form1"].Controls.Find("Progressbar", false).FirstOrDefault();
             myprogressbar.Maximum = 100;
             myprogressbar.Value = 0;
 
@@ -143,7 +146,7 @@ namespace Double_Data_Eliminator
                 //delete the files stored in the "delete_list" list
                 Double_data_delete_Functions.Double_data_delete(delete_list);
 
-                File.Delete(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\file_list_delete.txt");
+                File.Delete(System.IO.Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath) + "\\file_list_delete.txt");
 
                 MessageBox.Show("Thank you", "The Task executed successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -161,7 +164,7 @@ namespace Double_Data_Eliminator
             //Show the "delete_list" in the CheckboxListBox
             Debug.WriteLine("\nAusgabe Checkbox Inhalt(Form1)\n");
 
-            DirectoryInfo directory_executable = new DirectoryInfo((Application.ExecutablePath));
+            DirectoryInfo directory_executable = new DirectoryInfo((System.Windows.Forms.Application.ExecutablePath));
 
             List<string> delete_list;
             delete_list = File.ReadAllLines(directory_executable.Parent.FullName + "\\file_list_delete.txt").ToList();
@@ -199,7 +202,7 @@ namespace Double_Data_Eliminator
             Delete_Textfiles_Functions.Delete_Textfiles();
 
             //delete the "delete_list" textfile
-            File.Delete(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\file_list_delete.txt");
+            File.Delete(System.IO.Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath) + "\\file_list_delete.txt");
 
             Thread.Sleep(1000);
             this.BeginInvoke((MethodInvoker)delegate()
@@ -215,7 +218,7 @@ namespace Double_Data_Eliminator
 
         public static void ProgressBar_setup(int laenge)
         {
-            var form1 = Application.OpenForms[0];
+            var form1 = System.Windows.Forms.Application.OpenForms[0];
             //Control mycontrol = form1.Controls["ProgressBar"]; 
             ProgressBar mycontrol = (ProgressBar)form1.Controls["ProgressBar"];
 
@@ -232,7 +235,7 @@ namespace Double_Data_Eliminator
             //Double_Data_Eliminator.Form1 myform = new Form1();
             //TextBox_Input_Path.CreateControl();
 
-            var form1 = Application.OpenForms[0];
+            var form1 = System.Windows.Forms.Application.OpenForms[0];
             //Control mycontrol = form1.Controls["ProgressBar"]; 
             ProgressBar mycontrol = (ProgressBar)form1.Controls["ProgressBar"];
 
@@ -247,7 +250,89 @@ namespace Double_Data_Eliminator
             //Debug.WriteLine(TextBox_Input_Path.Text);
         }
 
+        private void Button_Commit_Error_Click(object sender, EventArgs e)
+        {
+            String message = TextBox_ErrorMessage.Text;
 
+            if(message.Length == 0) {
+                return;
+            }
+
+            CreateIssue(message);
+        }
+
+        private static async void CreateIssue(string message)
+
+        {
+            var owner = "OWNER";
+
+            var repo = "REPO";
+
+            var token = "YOUR-TOKEN";
+
+
+
+            var issue = new
+
+            {
+
+                title = "Found a bug",
+
+                body = "I'm having a problem with this.",
+
+                assignees = new[] { "octocat" },
+
+                milestone = 1,
+
+                labels = new[] { "bug" }
+
+            };
+
+
+
+            var json = System.Text.Json.JsonSerializer.Serialize(issue);
+
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+
+
+            using (var client = new HttpClient())
+
+            {
+
+                client.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+
+                client.DefaultRequestHeaders.Add("X-GitHub-Api-Version", "2022-11-28");
+
+                client.DefaultRequestHeaders.Add("User-Agent", "CSharpApp");
+
+
+                var url = $https://api.github.com/repos/{owner}/{repo}/issues;
+
+                var response = await client.PostAsync(url, data);
+
+
+
+                if (response.IsSuccessStatusCode)
+
+                {
+
+                    var result = await response.Content.ReadAsStringAsync();
+
+                    Console.WriteLine($"Issue created: {result}");
+
+                }
+
+                else
+
+                {
+
+                    Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
+
+                }
+
+            }
+    }
     }
 
 }
