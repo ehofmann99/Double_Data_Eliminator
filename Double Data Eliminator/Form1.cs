@@ -8,7 +8,6 @@ using System.Windows.Forms;
 using Double_Data_Eliminator.Functions.Files_with_same_content;
 using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Double_Data_Eliminator
 {
@@ -242,8 +241,6 @@ namespace Double_Data_Eliminator
             Thread.Sleep(1000);
             form1.BeginInvoke((MethodInvoker)delegate ()
             {
-                //mycontrol.Text = "jawohl";
-                //mycontrol.Update();
                 mycontrol.Increment(10);
             });
 
@@ -269,6 +266,7 @@ namespace Double_Data_Eliminator
             var repo = "Double_Data_Eliminator";
             var token = "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";
             
+            //Issue Nachricht konfigurieren 
             var issue = new
             {
                 title = "Found a bug",
@@ -277,19 +275,26 @@ namespace Double_Data_Eliminator
                 labels = new[] { "bug" }
             };
 
+            //Nachricht in Json umwandeln
             var json = System.Text.Json.JsonSerializer.Serialize(issue);
             var data = new StringContent(json, Encoding.UTF8, "application/json");
 
+            //Nachricht mit dem http Client an die API Schnittstelle von Github senden
             using (var client = new HttpClient())
             {
+                //Request Header Konfiguration
                 client.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
                 client.DefaultRequestHeaders.Add("X-GitHub-Api-Version", "2022-11-28");
                 client.DefaultRequestHeaders.Add("Accept", "application/vnd.github+json");
                 client.DefaultRequestHeaders.Add("user-agent", "ehofmann99");
 
+                //Ziel URL der Nachricht angeben
                 var url = $"https://api.github.com/repos/{owner}/{repo}/issues";
+
+                //Response Nachricht von Github auffangen
                 var response = await client.PostAsync(url, data);
 
+                //Response Nachricht auswerten
                 if (response.IsSuccessStatusCode)
                 {
                     var result = await response.Content.ReadAsStringAsync();
@@ -298,6 +303,8 @@ namespace Double_Data_Eliminator
                 else
                 {
                     Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
+
+                    //Gesamten Nachrichteninhalt ausgeben
                     Console.WriteLine(response.Content.ReadAsStringAsync().Result);
                 }
 

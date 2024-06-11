@@ -45,8 +45,10 @@ namespace Double_Data_Eliminator
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Button_Commit_Error = new System.Windows.Forms.Button();
             this.TextBox_ErrorMessage = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -95,10 +97,10 @@ namespace Double_Data_Eliminator
             // Confirm_deletion_button
             // 
             this.Confirm_deletion_button.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Confirm_deletion_button.Location = new System.Drawing.Point(373, 458);
+            this.Confirm_deletion_button.Location = new System.Drawing.Point(373, 416);
             this.Confirm_deletion_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Confirm_deletion_button.Name = "Confirm_deletion_button";
-            this.Confirm_deletion_button.Size = new System.Drawing.Size(85, 45);
+            this.Confirm_deletion_button.Size = new System.Drawing.Size(85, 47);
             this.Confirm_deletion_button.TabIndex = 5;
             this.Confirm_deletion_button.Text = "Confirm deletion";
             this.Confirm_deletion_button.UseVisualStyleBackColor = false;
@@ -111,7 +113,7 @@ namespace Double_Data_Eliminator
             this.CheckedListBox_Paths_To_Delete.Location = new System.Drawing.Point(22, 318);
             this.CheckedListBox_Paths_To_Delete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckedListBox_Paths_To_Delete.Name = "CheckedListBox_Paths_To_Delete";
-            this.CheckedListBox_Paths_To_Delete.Size = new System.Drawing.Size(436, 109);
+            this.CheckedListBox_Paths_To_Delete.Size = new System.Drawing.Size(436, 94);
             this.CheckedListBox_Paths_To_Delete.TabIndex = 3;
             // 
             // ProgressBar
@@ -191,31 +193,42 @@ namespace Double_Data_Eliminator
             // 
             // Button_Commit_Error
             // 
-            this.Button_Commit_Error.Location = new System.Drawing.Point(22, 458);
+            this.Button_Commit_Error.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Button_Commit_Error.Location = new System.Drawing.Point(353, 18);
             this.Button_Commit_Error.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Button_Commit_Error.Name = "Button_Commit_Error";
-            this.Button_Commit_Error.Size = new System.Drawing.Size(59, 36);
+            this.Button_Commit_Error.Size = new System.Drawing.Size(83, 45);
             this.Button_Commit_Error.TabIndex = 13;
-            this.Button_Commit_Error.Text = "button1";
-            this.Button_Commit_Error.UseVisualStyleBackColor = true;
+            this.Button_Commit_Error.Text = "Send report";
+            this.Button_Commit_Error.UseVisualStyleBackColor = false;
             this.Button_Commit_Error.Click += new System.EventHandler(this.Button_Commit_Error_Click);
             // 
             // TextBox_ErrorMessage
             // 
-            this.TextBox_ErrorMessage.Location = new System.Drawing.Point(100, 458);
+            this.TextBox_ErrorMessage.Location = new System.Drawing.Point(5, 31);
             this.TextBox_ErrorMessage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TextBox_ErrorMessage.Name = "TextBox_ErrorMessage";
-            this.TextBox_ErrorMessage.Size = new System.Drawing.Size(245, 20);
+            this.TextBox_ErrorMessage.Size = new System.Drawing.Size(319, 20);
             this.TextBox_ErrorMessage.TabIndex = 14;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.TextBox_ErrorMessage);
+            this.groupBox1.Controls.Add(this.Button_Commit_Error);
+            this.groupBox1.Location = new System.Drawing.Point(22, 468);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(436, 72);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Issue Report";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(482, 513);
-            this.Controls.Add(this.TextBox_ErrorMessage);
-            this.Controls.Add(this.Button_Commit_Error);
+            this.ClientSize = new System.Drawing.Size(482, 546);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Settings);
             this.Controls.Add(this.label3);
@@ -234,6 +247,8 @@ namespace Double_Data_Eliminator
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,6 +271,7 @@ namespace Double_Data_Eliminator
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Button_Commit_Error;
         private System.Windows.Forms.TextBox TextBox_ErrorMessage;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
