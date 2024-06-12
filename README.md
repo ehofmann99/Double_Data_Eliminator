@@ -9,6 +9,8 @@
 <ins>12.06.2024</ins>
 
 - Bug zum Anzeigen des Inhalts der Bugnachricht auf Github gefixt
+- Bug zum senden des Issue Reports abgefangen, bei nicht vorhanden sein einer Internetverbingung      wird eine Fehlermeldung gezeigt, wenn Github keine Anwort sendet wird ebenfalls eine   
+  Fehlermeldung gezeigt
 - Delete_Textfiles_Function: Exceptions werden jetzt abgefangen, wenn Programmtextfiles nicht       
   vorhanden sind/ nicht löschbar sind
 - Alle Kommentare von Deutsch auf Englisch umgeschrieben
