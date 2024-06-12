@@ -265,12 +265,12 @@ namespace Double_Data_Eliminator
             var owner = "ehofmann99";
             var repo = "Double_Data_Eliminator";
             var token = "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";
-            
+
             //Issue Nachricht konfigurieren 
             var issue = new
             {
                 title = "Found a bug",
-                body = "I'm having a problem with this.",
+                body = message,
                 assignees = new[] { "ehofmann99" },
                 labels = new[] { "bug" }
             };

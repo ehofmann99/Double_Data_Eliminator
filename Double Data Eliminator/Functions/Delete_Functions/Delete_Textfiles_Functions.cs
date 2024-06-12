@@ -1,5 +1,8 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Double_Data_Eliminator
 {
@@ -12,12 +15,45 @@ namespace Double_Data_Eliminator
         static public void Delete_Textfiles()
         {
             //The following files where used during the Program
+            Span<string> deletetextfiles = Main_Function.textfiles_used_in_program.ToArray();
 
-            foreach (string line in Main_Function.textfiles_used_in_program)
+            //Liste für nicht löschbare Programmdateien
+            List<string> problematicTextfiles = new List<string>();
+
+            //Löschvorgang
+            for (int i = 0; i < deletetextfiles.Length; i++)
             {
-                Debug.WriteLine("\n!!! ORDNER WIRD GELÖSCHT :" + line);
+                string textfile = Main_Function.textfiles_used_in_program[i];
+                Debug.WriteLine("\n!!! ORDNER WIRD GELÖSCHT :" + textfile);
 
-                File.Delete(line);
+                if(!(File.Exists(textfile)))
+                {
+                    problematicTextfiles.Add(textfile);
+                    continue;
+                }
+
+                try
+                {
+                    File.Delete(textfile);
+                }
+                catch
+                {
+                    problematicTextfiles.Add(textfile);
+                    continue;
+                }
+            
+            }
+            
+            //Ausgeben, welche Programmdateien nicht gelöscht werden konnten
+            if(!(problematicTextfiles.Count == 0))
+            {
+
+                //Ausgabe der fehlerhaften Programmdateien
+                for (int i = 0; i < problematicTextfiles.Count; i++)
+                {
+                    Debug.WriteLine("Programmtextfile konnte nicht gelöscht werden: " + problematicTextfiles[i]);
+                }
+              
             }
 
             return;
