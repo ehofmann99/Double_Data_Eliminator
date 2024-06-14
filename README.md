@@ -19,3 +19,4 @@
   
 Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:
 - Form1
+- Delete_Textfiles_Functions
