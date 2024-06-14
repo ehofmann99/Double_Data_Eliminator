@@ -17,5 +17,5 @@
 
 <ins>14.06.2024</ins>
   
-- Alle Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:
-      - Form1
+Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:
+- Form1
