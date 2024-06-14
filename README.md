@@ -14,4 +14,7 @@
   ebenfalls eine Fehlermeldung gezeigt
 - Delete_Textfiles_Function: Exceptions werden jetzt abgefangen, wenn Programmtextfiles
   nicht vorhanden sind oder nicht löschbar sind
+
+<ins>14.06.2024</ins>
+  
 - Alle Kommentare von Deutsch auf Englisch umgeschrieben
