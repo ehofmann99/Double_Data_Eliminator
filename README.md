@@ -22,7 +22,7 @@ Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:
 - Delete_Textfiles_Functions
 - Double_data_delete_Functions
 
-<ins>14.06.2024</ins>
+<ins>18.06.2024</ins>
 
 Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:
 - Find_out_empty_folders_Functions
