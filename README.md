@@ -33,5 +33,6 @@ Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:<br>
 - Directory_scanner_files_Functions
 - Directory_scanner_paths_Functions
 
-Directory_scanner_files_Functions in Thread ausgelagert <br>
-Directory_scanner_paths_Functions in Thread ausgelagert <br>
+Allgemeine Veränderungen:<br>
+- Directory_scanner_files_Functions in Thread ausgelagert 
+- Directory_scanner_paths_Functions in Thread ausgelagert
