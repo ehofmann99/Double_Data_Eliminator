@@ -29,3 +29,6 @@ Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:
 - Foldertest_Functions
 - Find_out_files_with_same_content
 - Deletelist_creator_Functions
+- Main_Function
+- Directory_scanner_files_Functions
+- Directory_scanner_paths_Functions
