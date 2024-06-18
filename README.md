@@ -28,3 +28,4 @@ Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:
 - Find_out_empty_folders_Functions
 - Foldertest_Functions
 - Find_out_files_with_same_content
+- Deletelist_creator_Functions
