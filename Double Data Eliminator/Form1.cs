@@ -11,7 +11,6 @@ using System.Text;
 
 namespace Double_Data_Eliminator
 {
-    //Testkommentar
     public partial class Form1 : Form
     {
         public delegate void Test999deligate();
@@ -121,8 +120,6 @@ namespace Double_Data_Eliminator
 
                 thread_Find_Same_Content.Start();
 
-                //UI soll warten bis der Thread beendet ist 
-                //thread_Find_Same_Content.Join();
             }
 
         }
@@ -229,26 +226,29 @@ namespace Double_Data_Eliminator
             });
         }
 
-            public static void ProgressBar_increase()
+        public static void ProgressBar_increase()
         {
-            //Double_Data_Eliminator.Form1 myform = new Form1();
-            //TextBox_Input_Path.CreateControl();
-
             var form1 = System.Windows.Forms.Application.OpenForms[0];
             //Control mycontrol = form1.Controls["ProgressBar"]; 
             ProgressBar mycontrol = (ProgressBar)form1.Controls["ProgressBar"];
 
             Thread.Sleep(1000);
             form1.BeginInvoke((MethodInvoker)delegate ()
-            {
-                mycontrol.Increment(10);
-            });
+        {
+            mycontrol.Increment(10);
+        });
 
-            //Debug.WriteLine(TextBox_Input_Path.Text);
+        //Debug.WriteLine(TextBox_Input_Path.Text);
         }
 
         private void Button_Commit_Error_Click(object sender, EventArgs e)
         {
+            if (!(System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable()))
+            {
+                MessageBox.Show("Could not sent the Report.\nYou are not connected to the Internet.", "Issue Report", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             String message = TextBox_ErrorMessage.Text;
 
             if(message.Length == 0) {
@@ -258,7 +258,7 @@ namespace Double_Data_Eliminator
             CreateIssue(message);
         }
 
-        //Rest API von Github nutzen, um ein neues Issue zu erzeugen
+        //Use the Rest API from Github to create a new Issue in Github
         private static async void CreateIssue(string message)
 
         {
@@ -266,7 +266,7 @@ namespace Double_Data_Eliminator
             var repo = "Double_Data_Eliminator";
             var token = "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";
 
-            //Issue Nachricht konfigurieren 
+            //configure the message sent
             var issue = new
             {
                 title = "Found a bug",
@@ -275,37 +275,40 @@ namespace Double_Data_Eliminator
                 labels = new[] { "bug" }
             };
 
-            //Nachricht in Json umwandeln
+            //convert the messsage in Json
             var json = System.Text.Json.JsonSerializer.Serialize(issue);
             var data = new StringContent(json, Encoding.UTF8, "application/json");
 
-            //Nachricht mit dem http Client an die API Schnittstelle von Github senden
+            //use the http client to send the message to the interface api from github
             using (var client = new HttpClient())
             {
-                //Request Header Konfiguration
+                //configure the request header
                 client.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
                 client.DefaultRequestHeaders.Add("X-GitHub-Api-Version", "2022-11-28");
                 client.DefaultRequestHeaders.Add("Accept", "application/vnd.github+json");
                 client.DefaultRequestHeaders.Add("user-agent", "ehofmann99");
 
-                //Ziel URL der Nachricht angeben
+                //Specify the target URL of the message
                 var url = $"https://api.github.com/repos/{owner}/{repo}/issues";
 
-                //Response Nachricht von Github auffangen
+                //Catch response message from Github
                 var response = await client.PostAsync(url, data);
 
-                //Response Nachricht auswerten
+                //Evaluate response message
                 if (response.IsSuccessStatusCode)
                 {
                     var result = await response.Content.ReadAsStringAsync();
                     Console.WriteLine($"Issue created: {result}");
+
+                    MessageBox.Show("The Report has been sent successfully.", "Issue Report", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
                     Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
 
-                    //Gesamten Nachrichteninhalt ausgeben
+                    //Display whole error Message
                     Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+                    MessageBox.Show("GitHub has a Problem. The Report could not be sent successfully.", "Issue Report", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }

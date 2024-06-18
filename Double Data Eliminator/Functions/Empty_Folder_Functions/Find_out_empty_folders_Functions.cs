@@ -26,10 +26,12 @@ namespace Double_Data_Eliminator
                 return;
             }
 
+            //Setup Deligate to get access to Form1
             var form1 = Application.OpenForms[0];
             Double_Data_Eliminator.Form1.Test9999deligate myTest9999delegate = new Double_Data_Eliminator.Form1.Test9999deligate(ProgressBar_setup);
             form1.Invoke(myTest9999delegate, path_list_local.Count % 1000);
 
+            //Setup Progressbar
             int abstandProgressBar = path_list_local.Count / 10;
 
             if (path_list_local.Count <= 10)
@@ -37,16 +39,14 @@ namespace Double_Data_Eliminator
                 abstandProgressBar = 1;
             }
 
-            ProgressBar myprogressbar = (ProgressBar)Application.OpenForms["Form1"].Controls.Find("Progressbar", false).FirstOrDefault();
-
             var mc1 = new Foldertest_Functions();
 
-            //Foldertest aufrufen
+            //do the actual foldertest
             for (int index = 0; index < path_list_local.Count; index++)
             {
-                //myprogressbar.Value += 1;
                 mc1.Foldertest(path_list_local[index], origin_folder_path, path_list_local);
 
+                //every 10. Index, the Progressbar increases by 10
                 switch (index % abstandProgressBar)
                 {
                     case (0):

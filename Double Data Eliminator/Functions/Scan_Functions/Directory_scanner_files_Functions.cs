@@ -8,7 +8,6 @@ namespace Double_Data_Eliminator
 
     class Directory_scanner_files_Functions
     {
-
         //Diretory_scanner scanns all paths from the path list and creats a new textfile(named filelist) in the executable path which stores
         //all paths to all files that where found in all path from path list
 
@@ -37,7 +36,7 @@ namespace Double_Data_Eliminator
                 {
                     Get_files_in_directory(path);
                 }
-                catch (UnauthorizedAccessException)
+                catch (Exception)
                 {
                     continue;
                 }
@@ -48,6 +47,7 @@ namespace Double_Data_Eliminator
             return;
         }
 
+        //Gets all files in the directory and stores them in the "all_found_files_list" file
         private static void Get_files_in_directory(string path)
         {
             string[] file_list_from_directory = Directory.GetFiles(path);
@@ -55,6 +55,7 @@ namespace Double_Data_Eliminator
             for (int index = 0; index < file_list_from_directory.Length; index++)
             {
                 string line = file_list_from_directory[index];
+
                 // Create a file to write to.
                 using (StreamWriter streamwriter_all_found_files_list = File.AppendText(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\all_found_files_list.txt"))
                 {

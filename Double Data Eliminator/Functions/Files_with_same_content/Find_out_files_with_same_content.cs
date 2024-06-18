@@ -16,8 +16,7 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
 
         public static void Get_files_with_same_content()
         {
-
-            //0. Abfragen, um Fehler vorzubeugen
+            //Querys to avoid errors
 
             List<string> fileList = File.ReadAllLines(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\all_found_files_list.txt").ToList();
 
@@ -32,8 +31,7 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
             Debug.WriteLine("\nGet_files_with_same_content ausgabe\n");
             Debug.WriteLine("\nÜbergebene Liste\n");
 
-
-            //1. Nach Dateiendung sortieren -> mehrere Listen(pro Endung eine Liste)
+            //Sort the filelists after the length to reduce compairingtimes
 
             Debug.WriteLine("\nDateigrößen und Listenname anzeigen\n");
 
@@ -71,10 +69,11 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
                 string listName = "Liste_" + fi1.Length;
 
                 Debug.WriteLine("Dateiendung: " + fi1.Length);
-                //Debug.WriteLine("Dateiendung ohne den Punkt: " + fi1.Extension.Remove(0,1));
+                //Debug.WriteLine("Filetype without the point: " + fi1.Extension.Remove(0,1));
+                //
                 Debug.WriteLine("Listenname: " + listName + "\n");
 
-                //Wenn es die Extensionliste noch nicht gibt muss eine neue erstellt werden
+                //If the Extenstionlist doesnt exist, create a new one 
                 if (!(lengthListDictionary.ContainsKey(listName)))
                 {
                     lengthListDictionary[listName] = new List<string>
@@ -84,13 +83,11 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
                     continue;
                 }
 
-                //Wenn es die Extensionliste bereits gibt fügt man den Pfad der vorliegenden Liste hinzu
+                //If the Extensionlist already exists, Add the path(fileListSpan[i]) to the existing List
                 lengthListDictionary[listName].Add(fileListSpan[i]);
 
             }
 
-            //var t = new Form1();
-            //t.Show();
             var form1 = Application.OpenForms[0];
             Double_Data_Eliminator.Form1.Test9999deligate myTest9999delegate = new Double_Data_Eliminator.Form1.Test9999deligate(ProgressBar_setup);
             
@@ -111,7 +108,6 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
             //{
             for (int index = 0; index < lengthListDictionary.Count; index++)
             {
-                //var form1 = Application.OpenForms[0];
                 switch (index % abstandProgressBar)
                 {
                     case (0):
@@ -129,7 +125,7 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
 
                 Debug.WriteLine(entry.Key);
 
-                // Value sind hier die einzelnen Extensionlisten
+                // .Value are the diffent extensionslists in the Dictionary
 
                 for (int i = 0; i < entry.Value.Count; i++)
                 {
@@ -140,8 +136,6 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
                         return;
                     }
 
-
-                    //2. Vergleich der Größe
                     Größenvergleich(entry.Value, deleteFileList);
 
                 }
@@ -179,8 +173,7 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
 
         static public void Größenvergleich(List<string> extensionList, List<string> deleteFileList)
         {
-            //vergleiche jeden Eintrag in der Liste mit allen darunterliegenden
-
+            //compaire every file in the list with every file underneth it
             for (int index = 0; index < extensionList.Count - 1; index++)
             {
                 if(!File.Exists(extensionList[0]))
@@ -200,14 +193,14 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
                     return;
                 }
 
-                //Größe der beiden Dateien vergleichen 
 
+                //compaire the size of both files
                 FileInfo fi1 = new FileInfo(extensionList[0]);
                 FileInfo fi2 = new FileInfo(extensionList[index + 1]);
 
                 if (fi1.Length == fi2.Length)
                 {
-                    //Gleichgroße Dateien gefunden
+                    //if both have the same content, one of them is deleted from the list and the search starts from the top of the list(index = 0;) again
                     if (Inhaltsvergleich(fi1, fi2, fi1.Length, extensionList, deleteFileList))
                     {
                         index = 0;
@@ -220,9 +213,6 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
 
         static public bool Inhaltsvergleich(FileInfo firstFile, FileInfo secondFile, long Length, List<string> extensionList, List<string> deleteFileList)
         {
-            //3. Inhaltsvergleich(GetBytes) -> File.GetBytes() -> file = 50 Gbyte????
-
-            //Gehe jedes einzelne Byte durch bis maximale festgelegte Länge von (z.B. 30 Byte) erreicht 
 
             try
             {
@@ -232,8 +222,9 @@ namespace Double_Data_Eliminator.Functions.Files_with_same_content
                     return false;
                 }
 
-                //4. Doppelte Dateien in File_list_delete.txt schreiben und die pfade aus der liste löschen
-
+                //Write files, to be found double, into the File_delete_list and remove the file from the current search in "extensionList"
+                //Only delete the files which are further down the line in the selected folder -> to delete only files which are in the same folder 
+                //for example to folders are the same -> only one folders in put is deleted
                 if (firstFile.FullName.Length > secondFile.FullName.Length)
                 {
                     deleteFileList.Add(firstFile.FullName);

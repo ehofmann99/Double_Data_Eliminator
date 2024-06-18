@@ -17,10 +17,10 @@ namespace Double_Data_Eliminator
             //The following files where used during the Program
             Span<string> deletetextfiles = Main_Function.textfiles_used_in_program.ToArray();
 
-            //Liste für nicht löschbare Programmdateien
+            //List for not deletable Programm Textfiles
             List<string> problematicTextfiles = new List<string>();
 
-            //Löschvorgang
+            //delete the Textfiles used in the Program
             for (int i = 0; i < deletetextfiles.Length; i++)
             {
                 string textfile = Main_Function.textfiles_used_in_program[i];
@@ -43,12 +43,12 @@ namespace Double_Data_Eliminator
                 }
             
             }
-            
-            //Ausgeben, welche Programmdateien nicht gelöscht werden konnten
-            if(!(problematicTextfiles.Count == 0))
+
+            //Output which program files could not be deleted
+            if (!(problematicTextfiles.Count == 0))
             {
 
-                //Ausgabe der fehlerhaften Programmdateien
+                //Output of the Textfiles, which are not deletable
                 for (int i = 0; i < problematicTextfiles.Count; i++)
                 {
                     Debug.WriteLine("Programmtextfile konnte nicht gelöscht werden: " + problematicTextfiles[i]);

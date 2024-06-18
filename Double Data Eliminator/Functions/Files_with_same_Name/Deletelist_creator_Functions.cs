@@ -29,10 +29,7 @@ namespace Double_Data_Eliminator
 
             File.Create(directory_executable.Parent.FullName + "\\file_list_delete.txt").Close();
 
-            //ProgressBar myprogressbar = (ProgressBar)Application.OpenForms["Form1"].Controls.Find("Progressbar", false).FirstOrDefault();
-            //myprogressbar.Maximum = all_found_files_list.Count;
-            //myprogressbar.Value = 0;
-
+            //Setup the deligate to access Form1 Progressbar 
             var form1 = Application.OpenForms[0];
             Double_Data_Eliminator.Form1.Test9999deligate myTest9999delegate = new Double_Data_Eliminator.Form1.Test9999deligate(ProgressBar_setup);
             form1.Invoke(myTest9999delegate, all_found_files_list.Count % 1000);
@@ -48,8 +45,6 @@ namespace Double_Data_Eliminator
 
             foreach (string line in all_found_files_list)
             {
-                //Application.DoEvents();
-
                 //read all characters from the "all_found_files_list" into an char array to get the first letter("first_letter_from_filename") of the filename
 
                 if (line.Length > 248)
@@ -100,7 +95,6 @@ namespace Double_Data_Eliminator
                     Create_Textfile_with_path_inside(line, first_letter_from_filename, directory_executable);
                 }
 
-                //var form1 = Application.OpenForms[0];
                 switch (index % abstandProgressBar)
                 {
                     case (0):
@@ -108,13 +102,10 @@ namespace Double_Data_Eliminator
                         form1.Invoke(myTest999delegate);
                         break;
                 }
-                //myprogressbar.Value += 1;
 
                 index++;
             }
         }
-
-        //Kommentar noch einfügen für jede Funktion
 
         private static void Append_Text_to_delete_list(string line, DirectoryInfo directory_executable)
         {

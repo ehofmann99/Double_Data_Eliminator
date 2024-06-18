@@ -8,7 +8,7 @@ namespace Double_Data_Eliminator
 {
     class Directory_scanner_paths_Functions
     {
-        //Directory_scanner scanns all Paths in the Users chosen Path and writes all of them into a path list
+        //Directory_scanner scanns all Paths in the Users chosen Path and writes all of them into a path list,
         //which is stored as a textfile in the executablepath
         static public List<string> Directory_scanner_paths(string origin_folder_path)
         {
