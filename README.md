@@ -17,14 +17,14 @@
 
 <ins>14.06.2024</ins>
   
-Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:
+Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:<br>
 - Form1
 - Delete_Textfiles_Functions
 - Double_data_delete_Functions
 
 <ins>18.06.2024</ins>
 
-Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:
+Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:<br>
 - Find_out_empty_folders_Functions
 - Foldertest_Functions
 - Find_out_files_with_same_content
@@ -32,3 +32,6 @@ Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:
 - Main_Function
 - Directory_scanner_files_Functions
 - Directory_scanner_paths_Functions
+
+Directory_scanner_files_Functions in Thread ausgelagert <br>
+Directory_scanner_paths_Functions in Thread ausgelagert <br>
