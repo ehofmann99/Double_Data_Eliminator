@@ -9,6 +9,30 @@
 <ins>12.06.2024</ins>
 
 - Bug zum Anzeigen des Inhalts der Bugnachricht auf Github gefixt
-- Delete_Textfiles_Function: Exceptions werden jetzt abgefangen, wenn Programmtextfiles nicht       
-  vorhanden sind/ nicht löschbar sind
-- Alle Kommentare von Deutsch auf Englisch umgeschrieben
+- Bug zum senden des Issue Reports abgefangen, bei nicht vorhanden sein einer
+  Internetverbingung wird eine Fehlermeldung gezeigt, wenn Github keine Anwort sendet wird 
+  ebenfalls eine Fehlermeldung gezeigt
+- Delete_Textfiles_Function: Exceptions werden jetzt abgefangen, wenn Programmtextfiles
+  nicht vorhanden sind oder nicht löschbar sind
+
+<ins>14.06.2024</ins>
+  
+Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:<br>
+- Form1
+- Delete_Textfiles_Functions
+- Double_data_delete_Functions
+
+<ins>18.06.2024</ins>
+
+Kommentare von Deutsch auf Englisch umgeschrieben in folgenden Dateien:<br>
+- Find_out_empty_folders_Functions
+- Foldertest_Functions
+- Find_out_files_with_same_content
+- Deletelist_creator_Functions
+- Main_Function
+- Directory_scanner_files_Functions
+- Directory_scanner_paths_Functions
+
+Allgemeine Veränderungen:<br>
+- Directory_scanner_files_Functions in Thread ausgelagert 
+- Directory_scanner_paths_Functions in Thread ausgelagert
