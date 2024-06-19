@@ -25,7 +25,6 @@ namespace Double_Data_Eliminator
             for (int index = 0; index < path_list_test.Count; index++)
             {
                 string path = path_list_test[index];
-                Application.DoEvents();
 
                 if (!(Directory.Exists(path)))
                 {

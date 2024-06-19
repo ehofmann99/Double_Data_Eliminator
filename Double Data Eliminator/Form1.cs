@@ -49,10 +49,25 @@ namespace Double_Data_Eliminator
             }
 
             //Get all directories from the origin_folder_path
-            List<string> path_list = Directory_scanner_paths_Functions.Directory_scanner_paths(origin_folder_path);
+            List<string> path_list = new List<string>();
+
+            Thread thread_Directory_scanner_paths = new Thread(() =>
+            {
+                path_list = Directory_scanner_paths_Functions.Directory_scanner_paths(origin_folder_path);
+            });
+
+            thread_Directory_scanner_paths.Start();
+            thread_Directory_scanner_paths.Join();
 
             //read all existing files in folders and subfolders
-            Directory_scanner_files_Functions.Directory_scanner_files(path_list);
+
+            Thread thread_Directory_scanner_files = new Thread(() =>
+            {
+                Directory_scanner_files_Functions.Directory_scanner_files(path_list);
+            });
+
+            thread_Directory_scanner_files.Start();
+            thread_Directory_scanner_files.Join();
 
             DirectoryInfo directory_executable = new DirectoryInfo((System.Windows.Forms.Application.ExecutablePath));
 
